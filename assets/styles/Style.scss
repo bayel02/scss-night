@@ -1,0 +1,267 @@
+@import "./font.css";
+@import "./reset.css";
+
+/* UNIQUE */
+.container {
+  max-width: 1220px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+.dot_success {
+  height: 10px;
+  width: 10px;
+  background: #22C74E;
+  display: inline-block;
+  border-radius: 50%;
+}
+/* UNIQUE */
+.hero {
+  position: relative;
+  height: 650px;
+  background: url(../images/bg1.jpg) no-repeat right;
+  background-size: 95%;
+  padding-top: 31px;
+  transition: .6s;
+  &::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background: linear-gradient(90deg, #FFFFFF 20%, rgba(255, 255, 255, 0) 86.67%);
+  }
+  &__top {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    justify-content: space-between;
+  }
+  &__logo {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+  }
+  &__def {
+    max-width: 220px;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 16px;
+    color: #593F0D;
+    margin-left: 8px;
+    transition: .6s;
+  }
+  &__contacts {
+    display: flex;
+    align-items: center;
+  }
+  &__sm-desc {
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 18px;
+    text-align: center;
+    color: #593F0D;
+    max-width: 139px;
+    margin-right: 14px;
+    transition: .6s;
+  }
+  &__social {
+    &:not(:last-child) {
+      margin-right: 9px;
+    }
+  }
+  &__phone {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 25px;
+    text-align: right;
+    color: #593F0D;
+    transition: .6s;
+  }
+  &__time {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    color: #593F0D;
+    text-align: right;
+    transition: .6s;
+    & .dot_success {
+      margin-right: 7px;
+    }
+  }
+  &__order {
+    margin-left: 20px;
+    display: inline-block;
+    position: relative;
+    width: 180px;
+    height: 40px;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 23px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: #835D13;
+    border-radius: 10px;
+    background: linear-gradient(274.27deg, rgba(255, 255, 255, 0) -14.6%, rgba(255, 255, 255, 0.39) 39.52%, rgba(255, 255, 255, 0) 110.6%), linear-gradient(263.81deg, #FFC771 10.32%, #FFC858 98.17%);
+    box-shadow: inset 0px 2px 15px rgba(255, 255, 255, 0.41), inset 19px 0px 25px rgba(255, 255, 255, 0.11);
+    &::before {
+      content: "";
+      z-index: -1;
+      position: absolute;
+      background: linear-gradient(0deg, rgba(131, 93, 19, 0.36), rgba(131, 93, 19, 0.36)), linear-gradient(263.81deg, #FBD293 10.32%, #FFD172 98.17%);
+      bottom: -3px;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      border-radius: 10px;
+    }
+  }
+  &__content {
+    position: relative;
+    z-index: 1;
+    margin-top: 71px;
+  }
+  &__title {
+    position: relative;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 48px;
+    color: #593F0D;
+    max-width: 650px;
+    transition: .6s;
+    &::after {
+      content: "";
+      display: inline-block;
+      position: absolute;
+      width: 100px;
+      height: 3px;
+      background-color: #FFCF6E;
+      left: 0;
+      bottom: -29px;
+    }
+    & .gold {
+      color: #FFCF6E;
+      font-weight: 700;
+      line-height: 49.52px;
+    }
+  }
+  &__desc {
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 30px;
+    max-width: 403px;
+    color: #593F0D;
+    margin: 55px 0 39px;
+    transition: .6s;
+  }
+  &__count {
+    display: inline-block;
+    position: relative;
+    width: 320px;
+    height: 78px;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 23px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: #835D13;
+    border-radius: 10px;
+    background: linear-gradient(274.27deg, rgba(255, 255, 255, 0) -14.6%, rgba(255, 255, 255, 0.39) 39.52%, rgba(255, 255, 255, 0) 110.6%), linear-gradient(263.81deg, #FFC771 10.32%, #FFC858 98.17%);
+    box-shadow: inset 0px 2px 15px rgba(255, 255, 255, 0.41), inset 19px 0px 25px rgba(255, 255, 255, 0.11);
+    &::before {
+      content: "";
+      z-index: -1;
+      position: absolute;
+      background: linear-gradient(0deg, rgba(131, 93, 19, 0.36), rgba(131, 93, 19, 0.36)), linear-gradient(263.81deg, #FBD293 10.32%, #FFD172 98.17%);
+      bottom: -5px;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      border-radius: 10px;
+    }
+    & img {
+      position: absolute;
+      top: -34px;
+      right: -80px;
+    }
+  }
+  &__ad {
+    position: absolute;
+    right: 100px;
+    bottom: 30px;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    max-width: 540px;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    color: #835D13;    
+    height: 100px;
+    background: linear-gradient(180deg, #FFFFFF 0%, #FFC858 100%, #FFC858 100%);
+    box-shadow: inset 0px 2px 15px rgba(255, 255, 255, 0.41), inset 19px 0px 25px rgba(255, 255, 255, 0.11);
+    border-radius: 10px;
+    transition: .3s;
+  }
+  &.hero_dark {
+    background: url(../images/bg2.jpg) no-repeat right;
+    transition: .6s;
+    &::before {
+      background: linear-gradient(90deg, #000000 5.12%, rgba(82, 82, 82, 0.35) 86.67%);
+    }
+    & .hero__def,
+    & .hero__sm-desc,
+    & .hero__phone,
+    & .hero__time,
+    & .hero__title,
+    & .hero__desc {
+      color: #FFFFFF;
+      transition: .6s;
+    }
+    & .hero__title {
+      font-family: 'Trajan Pro 3';
+      font-weight: 600;
+      font-size: 40px;
+      line-height: 60px;
+      max-width: 822px;
+    }
+    & .hero__desc {
+      font-family: 'Trajan Pro 3';
+      font-weight: 300;
+      font-size: 20px;
+      line-height: 29px;
+    }
+    & .gold {
+      color: #FFFFFF;
+      font-weight: 400;
+    }
+    & .hero__ad {
+      font-family: 'Trajan Pro 3';
+      top: 138px;
+      background: rgba(255, 255, 255, 0.1);
+      backdrop-filter: blur(6.5px);
+      border-radius: 20px;
+      width: 320px;
+      height: 371px;
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 26px;
+      text-align: center;
+      color: #FBD293;
+      flex-direction: column;
+      transition: .5s;
+      & img {
+        order: 2;
+        width: 166px;
+        height: 166px;
+      }
+      & .ad__text {
+        order: 1;
+        max-width: 281px;
+        height: 156px;
+        padding: 36px 0 20px;
+      }
+    }
+  }
+  
+}
